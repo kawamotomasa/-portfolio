@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>確認画面</title>
+        <style>
+        p{
+            text-align: center;
+            margin-top:100px;
+        }
+        #back,#submit{
+                margin-top:20px;
+                cursor: pointer;
+                width: 200px;
+                height:40px;
+                font-size: 20px;
+                background-color: #020cd9;
+                color: white;
+                border-radius: 70px;
+        }
+        #confi{
+            font-size:23px;
+        }
+        table{
+            font-size:18px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .cal{
+            font-size:20px;
+        }
+        #button{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+    <p><strong id="confi">下記内容でよろしければ送信ボタンを押してください。</strong></p>
+     <table>
+    
+        <tr><td><strong class="cal">氏名：</strong><span> !name!</span></td></tr>
+
+        <tr><td><strong class="cal">性別：</strong><span> !sex!</span><td></tr>
+
+        <tr><td><strong class="cal">生年月日：</strong><span> !year!年</span><span>!month!月</span><span>!day!日</span></td></tr>
+
+        <tr><td><strong class="cal">年齢:</strong><span> !age!歳</span></td></tr>
+
+        <tr><td><strong class="cal">住所:</strong><span> !addre1!</span><span>!addre2!</span></td></tr>
+
+        <tr><td><strong class="cal">電話番号:</strong><span> !tel!</span></td></tr>
+
+        <tr><td><strong class="cal">メールアドレス:</strong><span> !mail!</span></td></tr>
+
+        <tr><td><strong class="cal">職業:</strong><span> !work!</span></td></tr>
+
+        <tr><td><strong class="cal">趣味及びプロフィール:</td></tr><tr><td></strong><span> !comment!</span></td></tr>
+
+     </table>
+        <form action="form.php" method="post">
+            <input type="hidden" name="name" value="!name!">
+            <input type="hidden" name="sex" value="!sex!">
+            <input type="hidden" name="year" value="!year!">
+            <input type="hidden" name="month" value="!month!">
+            <input type="hidden" name="day" value="!day!">          
+            <input type="hidden" name="age" value="!age!"> 
+            <input type="hidden" name="addre1" value="!addre1!">
+            <input type="hidden" name="addre2" value="!addre2!">
+            <input type="hidden" name="tel" value="!tel!">
+            <input type="hidden" name="mail" value="!mail!">
+            <input type="hidden" name="work" value="!work!">
+            <input type="hidden" name="comment" value="!comment!">                      
+            <input type="hidden" name="mode" value="send">
+            <div id="button">
+            <input type="button" value="前に戻る" onclick="history.back()" id=back>
+            <input type="submit" value="送信する" id="submit">
+            </div>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.10/xlsx.full.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+        <script src="export-xlsx.js"></script>
+
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+    
+         $(function() {
+          $("#submit").hover(function(){
+           $(this).css('background','white');
+            }, function() {
+             $(this).css('background','');
+          });
+         });
+
+         $(function() {
+          $("#submit").hover(function(){
+           $(this).css('color','#020cd9');
+            }, function() {
+             $(this).css('color','');
+          });
+         });
+
+         $(function() {
+          $("#back").hover(function(){
+           $(this).css('background','white');
+            }, function() {
+             $(this).css('background','');
+          });
+         });
+
+         $(function() {
+          $("#back").hover(function(){
+           $(this).css('color','#020cd9');
+            }, function() {
+             $(this).css('color','');
+          });
+         });
+    
+        </script>
+    </body>
+</html>

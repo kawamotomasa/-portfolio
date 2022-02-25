@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>占い師用</title>
+<style>
+h1{
+    text-align: center;
+}
+table{
+    border-collapse:collapse;
+    margin-left:auto;
+    margin-right:auto;
+    }
+#footer{
+    padding-left:50%;
+}
+
+button{
+    cursor: pointer;
+    background:blue;
+    color:white;
+    width: 120px;
+    height:50px;
+}
+th,td{border:1px #000 solid;}
+th{background-color:#60CDB8;}
+</style>
+</head>
+<body>
+<h1>占い師用リスト</h1>
+<table class="table-to-export" data-sheet-name="占い師用リスト">
+<tr><th>名前</th><th>性別</th><th>年齢</th><th>生年月日</th></tr>
+!contents!
+</table>
+<p id="footer">
+<button type="button" id="dl-xlsx">ダウンロード</button>
+<a href="main.php" ><button>メニューに戻る</button></a>
+<!--<input type="button" value="メニューに戻る" onclick="history.back(-2)" class="button">-->
+<a id="del" href="fore_del.php" onclick="return confirm('削除してよろしいですか?');"><button type="button">全削除</button></a>
+</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.10/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+<script src="foreexport-xlsx.js"></script>
+
+        <script src="jquery-3.5.1.min.js"></script>
+        <script>
+    
+         $(function() {
+          $("button").hover(function(){
+           $(this).css('background','deeppink');
+            }, function() {
+             $(this).css('background','');
+          });
+         });
+
+        $(function() {
+          $("button").hover(function(){
+           $(this).css('color','white');
+            }, function() {
+             $(this).css('color','');
+          });
+         });
+         
+        </script>
+
+</body>
+</html>

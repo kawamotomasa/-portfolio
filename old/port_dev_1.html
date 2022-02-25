@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Masahiro Kawamoto</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href=css/style.css>
+<link rel="stylesheet" href=css/style2.css>
+
+</head>
+<body>
+<header id=head>
+<nav>
+<ul id=menu>
+ <li class=menu><a href="#home">home</a></li>
+ <li class=menu><a href="#profile">profile</a></li>
+ <li class=menu><a href="#skill">skill</a></li>
+ <li class=menu><a href="#career">career</a></li>
+ <li class=menu><a href="#works">works</a></li>
+ <li class=menu><a href="#contact">contact</a></li>
+</ul>
+</nav>
+<img src="img/sakura.jpg" height=100px width=100%>
+</header>
+
+<main>
+<section id=home>
+<h1>Masahiro Kawamoto</h1>
+<p id=home1>Web Developer & Infrastructure construction</p>
+</section>
+
+<section id=profile>
+<h1 id=profile2>profile</h2>
+<dl>
+
+<dt>■My Name</dt>
+<dd>
+川本 昌洋<br>
+Masahiro Kawamoto</dd><br>
+
+<dt>■Birthplace</dt>
+<dd>
+埼玉県出身　Saitama</dd><br>
+
+<dt>■Birthday</dt>
+<dd>1974/4/20</dd><br>
+
+<dt>■ADDRESS</dt>
+<dd>千葉県柏市中原 <br>
+Nakahara, Kashiwa, Chiba , Japan<br>
+</dd><br>
+
+<dt>■Nearest station</dt>
+<dd>東武アーバンパークライン増尾駅<br>
+</dd><br>
+
+<dt>■Qualification</dt>
+<dd>LPICレベル1、LPICレベル2、LPICレベル3
+
+<details>
+<summary>資格一覧紹介</summary>
+<img src="img/lpic1.JPG" id="lpic" width="400" height="300">
+<ul>
+ <li class=pcl><img src="img/lpic1.JPG" width="100" height="100" onmouseover="aaa()"></li>
+ <li class=pcl><img src="img/lpic2.JPG" width="100" height="100" onmouseover="bbb()"></li>
+ <li class=pcl><img src="img/lpic3.JPG" width="100" height="100" onmouseover="ccc()"></li>
+</ul><br><br><br><br><br>
+</details></dd><br>
+
+<script>
+function aaa(){
+  document.getElementById("lpic").setAttribute("src","img/lpic1.JPG");
+}
+
+function bbb(){
+  document.getElementById("lpic").setAttribute("src","img/lpic2.JPG");
+}
+
+function ccc(){
+  document.getElementById("lpic").setAttribute("src","img/lpic3.JPG");
+}
+
+</script>
+
+<dt>■My hobby</dt>
+<dd>パソコン工房
+
+<details>
+<summary>自作紹介</summary>
+<div><img src="img/PC1.JPG" id="pc" width="200" height="300"></div>
+<ul>
+ <li class=pcl><img src="img/PC1.JPG" width="100" height="100" onmouseover="ddd()"></li>
+ <li class=pcl><img src="img/PC2.JPG" width="100" height="100" onmouseover="eee()"></li>
+ <li class=pcl><img src="img/PC3.JPG" width="100" height="100" onmouseover="fff()"></li>
+</ul>
+<br>
+</details></dd>
+
+<script>
+function ddd(){
+  document.getElementById("pc").setAttribute("src","img/PC1.JPG");
+}
+
+function eee(){
+  document.getElementById("pc").setAttribute("src","img/PC2.JPG");
+}
+
+function fff(){
+  document.getElementById("pc").setAttribute("src","img/PC3.JPG");
+}
+
+</script>
+
+
+</dl>
+
+</section>
+
+<section id=skill>
+<h1 id=skill2>My Skill</h2>
+<ul>
+<li>Rhel7</li>
+<td><progress value="80" max="100"></progress>70%</td>
+<li>HTML、CSS</li>
+<td><progress value="50" max="100"></progress>50%</td>
+<li>SQL(mysql)</li>
+<td><progress value="70" max="100"></progress>70%</td>
+<li>javascript</li>
+<td><progress value="40" max="100"></progress>40%</td>
+<li>PHP</li>
+<td><progress value="70" max="100"></progress>70%</td>
+</ul>
+</section>
+
+<section id=career>
+<h1 id=carrer2>Career</h2>
+
+<dl>
+<dt>Business career</dt>
+<ul>
+<li>約20年間IT系のインフラエンジニア分野で活躍。</li>
+<li>UNIXサーバ運用監視(輪番)、ヘルプデスク、サーバー構築の実績あり。</li>
+<li>現在は、インフラ系のフリーランスとして活躍中。</li>
+<li>方式設計書、詳細設計書の作成、テスト観点における項目書作成、サーバー構築、単体テスト、結合テストの業務を遂行。</li>
+</ul>
+</dl>
+
+<dl>
+<dt>Desired occupation</dt>
+<ul>
+<li>今後、インフラ業務、Webアプリ開発の二刀流での活躍を希望。</li>
+<li>主にLinuxサーバー構築案件、PHPの開発案件を中心に探しております。</li>
+<li>Webの開発においても、インフラ構築で培ってきたノウハウを基に活躍できればと思います。</li>
+</ul>
+</dl>
+<p>ご感想、お仕事のご依頼は<a href="#contact">お問い合わせフォーム</a>また<a href="mailto:kawa-masa1974@outlook.jp ">メール</a>よりお気軽にお送りください。</p>
+</div>
+</section>
+
+<section id=works>
+<h1 id=warks2>works</h2>
+<dl>
+<dt>■畑で婚活申し込みフォーム及び管理者サイト</dt>
+<dd>
+<a href="../application/entry.html" target="_blank">申し込みフォーム</a><br>
+<a href="../application/login/login.html" target="_blank">管理者サイト</a>
+<details>
+<summary>詳細説明</summary>
+</details>
+</dd>
+</dl>
+</section>
+
+<section id=contact>
+<h1 id=contact2>contact</h2>
+<form action=contact.php method="post">
+■Your Name<br>
+<input type="text" name="name" size=30><br>
+■Email<br>
+<input type="text" name="mail" size=30><br>
+■Inquiry<br>
+<textarea name="comment" cols="50" rows="5">
+</textarea><br>
+<input type="submit" name="sub" value="submit"><br>
+<input type="hidden" name="mode" value="post">
+</form>
+</section>
+
+</main>
+
+</body>
+</html>

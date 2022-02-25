@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+span {
+color:green;
+}
+</style>
+<title> 確認フォーム</title>
+</head>
+<body>
+<p> 次の内容でよろしければ、送信ボタンを押してください。</p>
+<p>
+■要件 ：<br><span>!requirements!</span>
+</p>
+<p>
+■お名前 ：<br><span>!name! 様</span>
+</p>
+<p>
+■メールアドレス ：<br><span>!mail!</span>
+</p>
+<p>
+■コメント ：<br><span>!comment!</span>
+</p>
+<form action="contact.php" method="post">
+<input type="hidden" name="mode" value="send">
+<input type="hidden" name="requirements" value="!requirements!">
+<input type="hidden" name="name" value="!name!">
+<input type="hidden" name="mail" value="!mail!">
+<input type="hidden" name="comment" value="!comment!">
+<input type="button" value=" 前に戻る" onclick="history.back()">
+<input type="submit" value=" 送信する">
+</form>
+</body>
+</html>
+<!doctype htm

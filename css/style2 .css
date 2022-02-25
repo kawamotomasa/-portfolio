@@ -1,0 +1,319 @@
+body{
+width:767px;
+}
+
+header{
+background-color: rgba(255, 255, 255, 0.8);
+height: 80px;
+width: 500px;
+position: fixed;
+right:10%;
+text-align: center;
+}
+
+#menu{
+display: flex;
+justify-content: space-between;
+width: 410px;
+right:25% ;
+right:auto;
+left: auto;
+}
+
+.menu {
+list-style-type: none;
+width: 60px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+background-color: #03fcca;
+}
+
+.menu-link{
+text-decoration: none;
+}
+
+/* name */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
+
+.title span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+.title span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+.title span:nth-child(5) {
+  transition-delay: 0.24s;
+}
+.title span:nth-child(6) {
+  transition-delay: 0.30s;
+}
+.title span:nth-child(7) {
+  transition-delay: 0.36s;
+}
+.title span:nth-child(8) {
+  transition-delay: 0.42s;
+}
+.title span:nth-child(9) {
+  transition-delay: 0.48s;
+}
+.title span:nth-child(10) {
+  transition-delay: 0.54s;
+}
+.title span:nth-child(11) {
+  transition-delay: 0.6s;
+}
+.title span:nth-child(12) {
+  transition-delay: 0.66s;
+}
+.title span:nth-child(13) {
+  transition-delay: 0.72s;
+}
+.title span:nth-child(14) {
+  transition-delay: 0.78s;
+}
+
+/****** Base style. ******/
+
+/* end name */
+
+
+#home{
+padding-top:100px;
+background-image: url("../img/sakura2.jpg");
+background-size: 300px;
+height: 300px;
+width:auto;
+}
+
+h1{
+text-align: center;
+font-size: 40px;
+}
+
+#home1{
+width:40px
+color:white;
+text-align: center;
+font-size: 40px;
+background-color: royalblue;
+}
+
+#home2{
+color:white;
+text-align: center;
+font-size: 30px;
+background-color: royalblue;
+}
+
+
+#profile{
+padding-top: 100px;
+background-color: #7532a8;
+height: 1450px;
+width:auto;
+color:white;
+}
+
+
+.profile{
+  padding-top:20px;
+  padding-left: 250px;
+  height: 80px;
+  color: #fff;
+  background-color: #7532a8;
+}
+
+.profile:hover{
+  cursor: pointer;
+  padding-top:30px;
+  padding-left: 250px;
+  background-color: #292b27;
+  transition:all 0.5s steps(7);
+}
+
+#addre{
+  cursor: pointer;
+  padding-top:20px;
+  padding-left:250px;
+  height: 150px;
+  color: #fff;
+  background-color: #7532a8;
+}
+
+#addre:hover{
+  padding-top:30px;
+  padding-left: 250px;
+  height: 400px;
+  background-color: #292b27;
+  transition:all 1s steps(5);
+}
+
+.profile2{
+  padding-top:20px;
+  padding-left: 250px;
+  height: 150px;
+  color: #fff;
+  background-color: #7532a8;
+}
+
+.profile2:hover{
+  padding-top:30px;
+  padding-left: 250px;
+  height: 550px;
+  transition:all 01s steps(7);
+  background-color: #292b27;
+}
+
+#lpic{
+  margin-top:20px;
+  width:310px;
+  height:200px;
+}
+
+.lplist{
+  cursor: pointer;
+  width:100px;
+  height:100px;
+}
+
+.LPIC-skill{
+  display: flex;
+}
+
+
+#pc{
+  float:left;
+  margin-top:5px;
+  width:200px;
+  height:315px;
+}
+
+#pcl{
+  margin-top:5px;
+  float:left;
+}
+
+.pclist{
+  cursor: pointer;
+  width:100px;
+  height:100px;
+}
+
+
+#skill{
+padding-top: 100px;
+color:#01162c;
+background-color: #42e833;
+height: 700px;
+}
+
+.skillset{
+list-style-type: none;
+}
+
+#skillset{
+padding-left:250px;
+}
+
+
+#career{
+padding-top: 100px;
+color:#871616;
+background-color: #f0d507;
+height: 750px;
+}
+
+#bc{
+padding-left:150px;
+}
+
+#do{
+padding-left:150px;
+}
+
+
+#con{
+padding-left:150px;
+}
+
+
+#works{
+padding-top: 100px;
+padding-left:30px;
+color:#01162c;
+background-color: #d1a213;
+height: 1000px;
+}
+
+
+#farm-dev{
+cursor: pointer;
+}
+
+#exp1{
+padding-left: 30px;
+display: none;
+}
+
+
+#port-dev{
+cursor: pointer;
+}
+
+
+#exp2{
+padding-left: 30px;
+display: none;
+}
+
+
+
+#contact{
+padding-top: 100px;
+color:#470bb6;
+background-color: #4fc4ff;
+height: 800px;
+}
+
+
+#con-form{
+padding-left:250px;
+}
+
+#ifope {
+  width:250px;
+  height:200px;  
+  display: none;
+}
+
+#Introduction-Qual{
+display: none;
+}
+
+
+#PC-Introduction{
+display: none;
+}
+
